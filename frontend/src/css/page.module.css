@@ -1,0 +1,46 @@
+.page {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.title {
+	color: var(--mantine-color-pink-filled);
+}
+
+.table {
+	padding: 10px;
+	max-height: 500px;
+	overflow: auto;
+}
+
+.searchInput {
+	padding: 10px;
+}
+
+.link {
+  color: var(--mantine-color-pink-filled);
+}
+
+.divider {
+	padding-top: 20px;
+	padding-bottom: 5px
+}
+
+.tableHeader {
+  position: sticky;
+  top: 0;
+  background-color: var(--mantine-color-body);
+  transition: box-shadow 150ms ease;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: rem(1px) solid
+      light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-3));
+  }
+}
+
